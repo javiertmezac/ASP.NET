@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PerfilesDS" targetNamespace="http://tempuri.org/PerfilesDS.xsd" xmlns:mstns="http://tempuri.org/PerfilesDS.xsd" xmlns="http://tempuri.org/PerfilesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="PerfilesCS" IsAppSettingsProperty="true" Modifier="Assembly" Name="PerfilesCS (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.PerfilesCS.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="PerfilesDS" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PerfilesDS (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.PerfilesDS.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VProfesoresTableAdapter" GeneratorDataComponentClassName="VProfesoresTableAdapter" Name="VProfesores" UserDataComponentName="VProfesoresTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PerfilesDS (Web.config)" DbObjectName="Perfiles.dbo.VProfesores" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        VProfesores.*
+FROM            VProfesores</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nombre2" DataSetColumn="nombre2" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="apPaterno" DataSetColumn="apPaterno" />
+              <Mapping SourceColumn="apMaterno" DataSetColumn="apMaterno" />
+              <Mapping SourceColumn="TipoProfesor" DataSetColumn="TipoProfesor" />
+              <Mapping SourceColumn="Carrera" DataSetColumn="Carrera" />
+              <Mapping SourceColumn="Periodo" DataSetColumn="Periodo" />
+              <Mapping SourceColumn="Materia" DataSetColumn="Materia" />
+              <Mapping SourceColumn="numemp" DataSetColumn="numemp" />
+              <Mapping SourceColumn="idPer" DataSetColumn="idPer" />
+              <Mapping SourceColumn="idCur" DataSetColumn="idCur" />
+              <Mapping SourceColumn="idMate" DataSetColumn="idMate" />
+              <Mapping SourceColumn="idPeri" DataSetColumn="idPeri" />
+              <Mapping SourceColumn="idProf" DataSetColumn="idProf" />
+              <Mapping SourceColumn="claveProf" DataSetColumn="claveProf" />
+              <Mapping SourceColumn="idTPro" DataSetColumn="idTPro" />
+              <Mapping SourceColumn="idcurcar" DataSetColumn="idcurcar" />
+              <Mapping SourceColumn="idcarr" DataSetColumn="idcarr" />
+              <Mapping SourceColumn="clavecarr" DataSetColumn="clavecarr" />
+              <Mapping SourceColumn="idCar" DataSetColumn="idCar" />
+              <Mapping SourceColumn="idMat" DataSetColumn="idMat" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="imss" DataSetColumn="imss" />
+              <Mapping SourceColumn="rfc" DataSetColumn="rfc" />
+              <Mapping SourceColumn="curp" DataSetColumn="curp" />
+              <Mapping SourceColumn="expLaboral" DataSetColumn="expLaboral" />
+              <Mapping SourceColumn="expDocente" DataSetColumn="expDocente" />
+              <Mapping SourceColumn="ingles" DataSetColumn="ingles" />
+              <Mapping SourceColumn="clave" DataSetColumn="clave" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PerfilesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="PerfilesDS" msprop:Generator_UserDSName="PerfilesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VProfesores" msprop:Generator_TableClassName="VProfesoresDataTable" msprop:Generator_TableVarName="tableVProfesores" msprop:Generator_TablePropName="VProfesores" msprop:Generator_RowDeletingName="VProfesoresRowDeleting" msprop:Generator_RowChangingName="VProfesoresRowChanging" msprop:Generator_RowEvHandlerName="VProfesoresRowChangeEventHandler" msprop:Generator_RowDeletedName="VProfesoresRowDeleted" msprop:Generator_UserTableName="VProfesores" msprop:Generator_RowChangedName="VProfesoresRowChanged" msprop:Generator_RowEvArgName="VProfesoresRowChangeEvent" msprop:Generator_RowClassName="VProfesoresRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre2" msprop:Generator_ColumnVarNameInTable="columnnombre2" msprop:Generator_ColumnPropNameInRow="nombre2" msprop:Generator_ColumnPropNameInTable="nombre2Column" msprop:Generator_UserColumnName="nombre2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="apPaterno" msprop:Generator_ColumnVarNameInTable="columnapPaterno" msprop:Generator_ColumnPropNameInRow="apPaterno" msprop:Generator_ColumnPropNameInTable="apPaternoColumn" msprop:Generator_UserColumnName="apPaterno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="apMaterno" msprop:Generator_ColumnVarNameInTable="columnapMaterno" msprop:Generator_ColumnPropNameInRow="apMaterno" msprop:Generator_ColumnPropNameInTable="apMaternoColumn" msprop:Generator_UserColumnName="apMaterno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoProfesor" msprop:Generator_ColumnVarNameInTable="columnTipoProfesor" msprop:Generator_ColumnPropNameInRow="TipoProfesor" msprop:Generator_ColumnPropNameInTable="TipoProfesorColumn" msprop:Generator_UserColumnName="TipoProfesor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Carrera" msprop:Generator_ColumnVarNameInTable="columnCarrera" msprop:Generator_ColumnPropNameInRow="Carrera" msprop:Generator_ColumnPropNameInTable="CarreraColumn" msprop:Generator_UserColumnName="Carrera">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Periodo" msprop:Generator_ColumnVarNameInTable="columnPeriodo" msprop:Generator_ColumnPropNameInRow="Periodo" msprop:Generator_ColumnPropNameInTable="PeriodoColumn" msprop:Generator_UserColumnName="Periodo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Materia" msprop:Generator_ColumnVarNameInTable="columnMateria" msprop:Generator_ColumnPropNameInRow="Materia" msprop:Generator_ColumnPropNameInTable="MateriaColumn" msprop:Generator_UserColumnName="Materia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numemp" msprop:Generator_ColumnVarNameInTable="columnnumemp" msprop:Generator_ColumnPropNameInRow="numemp" msprop:Generator_ColumnPropNameInTable="numempColumn" msprop:Generator_UserColumnName="numemp" type="xs:int" />
+              <xs:element name="idPer" msprop:Generator_ColumnVarNameInTable="columnidPer" msprop:Generator_ColumnPropNameInRow="idPer" msprop:Generator_ColumnPropNameInTable="idPerColumn" msprop:Generator_UserColumnName="idPer" type="xs:int" />
+              <xs:element name="idCur" msprop:Generator_ColumnVarNameInTable="columnidCur" msprop:Generator_ColumnPropNameInRow="idCur" msprop:Generator_ColumnPropNameInTable="idCurColumn" msprop:Generator_UserColumnName="idCur" type="xs:int" />
+              <xs:element name="idMate" msprop:Generator_ColumnVarNameInTable="columnidMate" msprop:Generator_ColumnPropNameInRow="idMate" msprop:Generator_ColumnPropNameInTable="idMateColumn" msprop:Generator_UserColumnName="idMate" type="xs:int" />
+              <xs:element name="idPeri" msprop:Generator_ColumnVarNameInTable="columnidPeri" msprop:Generator_ColumnPropNameInRow="idPeri" msprop:Generator_ColumnPropNameInTable="idPeriColumn" msprop:Generator_UserColumnName="idPeri" type="xs:int" />
+              <xs:element name="idProf" msprop:Generator_ColumnVarNameInTable="columnidProf" msprop:Generator_ColumnPropNameInRow="idProf" msprop:Generator_ColumnPropNameInTable="idProfColumn" msprop:Generator_UserColumnName="idProf" type="xs:int" />
+              <xs:element name="claveProf" msprop:Generator_ColumnVarNameInTable="columnclaveProf" msprop:Generator_ColumnPropNameInRow="claveProf" msprop:Generator_ColumnPropNameInTable="claveProfColumn" msprop:Generator_UserColumnName="claveProf">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idTPro" msprop:Generator_ColumnVarNameInTable="columnidTPro" msprop:Generator_ColumnPropNameInRow="idTPro" msprop:Generator_ColumnPropNameInTable="idTProColumn" msprop:Generator_UserColumnName="idTPro" type="xs:int" />
+              <xs:element name="idcurcar" msprop:Generator_ColumnVarNameInTable="columnidcurcar" msprop:Generator_ColumnPropNameInRow="idcurcar" msprop:Generator_ColumnPropNameInTable="idcurcarColumn" msprop:Generator_UserColumnName="idcurcar" type="xs:int" />
+              <xs:element name="idcarr" msprop:Generator_ColumnVarNameInTable="columnidcarr" msprop:Generator_ColumnPropNameInRow="idcarr" msprop:Generator_ColumnPropNameInTable="idcarrColumn" msprop:Generator_UserColumnName="idcarr" type="xs:int" />
+              <xs:element name="clavecarr" msprop:Generator_ColumnVarNameInTable="columnclavecarr" msprop:Generator_ColumnPropNameInRow="clavecarr" msprop:Generator_ColumnPropNameInTable="clavecarrColumn" msprop:Generator_UserColumnName="clavecarr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idCar" msprop:Generator_ColumnVarNameInTable="columnidCar" msprop:Generator_ColumnPropNameInRow="idCar" msprop:Generator_ColumnPropNameInTable="idCarColumn" msprop:Generator_UserColumnName="idCar" type="xs:int" />
+              <xs:element name="idMat" msprop:Generator_ColumnVarNameInTable="columnidMat" msprop:Generator_ColumnPropNameInRow="idMat" msprop:Generator_ColumnPropNameInTable="idMatColumn" msprop:Generator_UserColumnName="idMat" type="xs:int" />
+              <xs:element name="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_UserColumnName="email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="imss" msprop:Generator_ColumnVarNameInTable="columnimss" msprop:Generator_ColumnPropNameInRow="imss" msprop:Generator_ColumnPropNameInTable="imssColumn" msprop:Generator_UserColumnName="imss" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rfc" msprop:Generator_ColumnVarNameInTable="columnrfc" msprop:Generator_ColumnPropNameInRow="rfc" msprop:Generator_ColumnPropNameInTable="rfcColumn" msprop:Generator_UserColumnName="rfc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="curp" msprop:Generator_ColumnVarNameInTable="columncurp" msprop:Generator_ColumnPropNameInRow="curp" msprop:Generator_ColumnPropNameInTable="curpColumn" msprop:Generator_UserColumnName="curp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="expLaboral" msprop:Generator_ColumnVarNameInTable="columnexpLaboral" msprop:Generator_ColumnPropNameInRow="expLaboral" msprop:Generator_ColumnPropNameInTable="expLaboralColumn" msprop:Generator_UserColumnName="expLaboral" type="xs:int" minOccurs="0" />
+              <xs:element name="expDocente" msprop:Generator_ColumnVarNameInTable="columnexpDocente" msprop:Generator_ColumnPropNameInRow="expDocente" msprop:Generator_ColumnPropNameInTable="expDocenteColumn" msprop:Generator_UserColumnName="expDocente" type="xs:int" minOccurs="0" />
+              <xs:element name="ingles" msprop:Generator_ColumnVarNameInTable="columningles" msprop:Generator_ColumnPropNameInRow="ingles" msprop:Generator_ColumnPropNameInTable="inglesColumn" msprop:Generator_UserColumnName="ingles" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="clave" msprop:Generator_ColumnVarNameInTable="columnclave" msprop:Generator_ColumnPropNameInRow="clave" msprop:Generator_ColumnPropNameInTable="claveColumn" msprop:Generator_UserColumnName="clave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VProfesores" />
+      <xs:field xpath="mstns:numemp" />
+      <xs:field xpath="mstns:idPer" />
+      <xs:field xpath="mstns:idCur" />
+      <xs:field xpath="mstns:idTPro" />
+      <xs:field xpath="mstns:idCar" />
+      <xs:field xpath="mstns:idMat" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

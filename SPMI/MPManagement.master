@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPManagement.master.cs" Inherits="MPManagement" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - Sistema Oasis</title>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference ID="BundleReference1" runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">
+                        <a id="A1" runat="server" href="~/">
+                            <asp:Image ID="Image1" ImageUrl="~/Images/logo.png" runat="server" /></a>                                               
+                    </p>
+                </div>
+                <div class="float-right">                    
+                    <section id="login" >
+                        <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+                            <AnonymousTemplate>
+                                <asp:Label ID="nombreUsuario" runat="server" CssClass="txtNom"  ></asp:Label>                                                                   
+                                <asp:ImageButton Height="31px" Width="33px" ID="Image2" ToolTip="Cerrar sesión" OnClick="cerrarSesion" ImageUrl="~/Images/cerrarsesion.gif" runat="server" ImageAlign="Bottom" />                                                                                             
+                            </AnonymousTemplate>
+                        </asp:LoginView>
+                    </section>
+                       
+                    <nav>                                                  
+                        <ul id="menu">
+                            <li><a id="A5" runat="server" href="~/Account/Management.aspx">Inicio</a></li>
+                            <li><a id="A3" runat="server" href="~/Account/Empresas.aspx">Empresas</a></li>
+                            <li><a id="A6" runat="server" href="~/Account/Contacto.aspx">Contactos</a></li>
+                            <li><a id="A4" runat="server" href="~/Account/Pedidos.aspx">Pedidos</a></li>  
+                            <li><a id="A7" runat="server" href="~/Account/Ventas.aspx">Ventas</a></li>                                                                                  
+                            <li><a id="A8" runat="server" href="~/Account/Facturas.aspx">Facturas</a></li>
+                            <li><a id="A2" runat="server" href="~/Account/PrecioGranel.aspx">Precios</a></li>                            
+                            <li><a id="A9" runat="server" href="~/Account/Informes.aspx">Informes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>
+                        JAJA Corp. Todos los derechos reservados &copy; <%: DateTime.Now.Year %> - Sistema de gestión de operaciones Planta Oasis
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
